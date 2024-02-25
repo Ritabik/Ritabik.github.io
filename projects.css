@@ -1,0 +1,65 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('project_logo.jpg'); /* Replace 'your-background-image.jpg' with the actual image path */
+    background-size: cover; /* Cover the entire background */
+    background-position: center; /* Center the background image */
+    background-color: #1a1a1a; /* Dark background color */
+    color: #ffffff; /* Light text color */
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+section {
+    padding: 40px;
+}
+
+.left-align {
+    text-align: left; /* Align content to the left */
+}
+
+h2 {
+    color: #ffcc00; /* Highlight color for section headings */
+}
+
+.project {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #333; /* Dark background color */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1); /* Light box shadow */
+}
+
+.project h3 {
+    color: #ffffff; /* Light text color for project titles */
+}
+
+.project p {
+    color: #ccc; /* Light text color for paragraphs */
+    font-size: 14px; /* Adjust the font size as needed */
+}
+
+
+.project ul {
+    list-style: none;
+    padding: 0;
+}
+
+.project ul li {
+    margin-bottom: 10px;
+}
+
+.project a {
+    color: #ffcc00; /* Highlight color for links */
+    text-decoration: none;
+}
+
+.project a:hover {
+    color: #ffffff; /* Hover color for links */
+}

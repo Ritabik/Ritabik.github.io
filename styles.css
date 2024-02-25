@@ -1,0 +1,365 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #1a1a1a;
+    color: #ffffff;
+}
+
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.profile-section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.profile-image {
+    margin-right: 20px;
+    margin-bottom: 40px; /* Adjust the margin as needed */
+     align-self: flex-end;
+}
+
+header, .hero, .about-me, .cv, .publications, .skills, .testimonials, .contact, footer {
+    background-color: #111;
+    padding: 20px 0;
+}
+/* Add this CSS to center the site title and include occupation */
+
+/* ... Other existing CSS styles ... */
+
+
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #ffcc00;
+}
+.site-title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.site-title {
+    background: linear-gradient(to bottom, #1a1a1a, #000); /* Linear gradient background */
+    padding: 5px;
+    border-radius: 10px; /* Rounded corners */
+    max-width: 600px;
+    max-height: 200px
+    margin: 0 auto;
+    border: 2px solid #ffcc00; /* Border color */
+    box-shadow: 0 0 10px rgba(255, 204, 0, 0.5); /* Box shadow */
+    position: relative;
+}
+
+.site-title ::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: repeating-linear-gradient(45deg, transparent, transparent 10px, rgba(255, 255, 255, 0.1) 10px, rgba(255, 255, 255, 0.1) 20px); /* Add a diagonal stripe pattern */
+    opacity: 0.2; /* Adjust the opacity of the pattern */
+    pointer-events: none; /* Ensure the pattern doesn't interfere with content */
+}
+.site-title h1 {
+    font-family: 'Garamond', serif; /* Change to the desired font */
+    font-size: 3em; /* Adjust the font size as needed */
+    color: #ffcc00; /* Change to your preferred color */
+    margin-bottom: 20px;
+}
+
+.site-title p {
+    font-size: 1.5em; /* Adjust the font size as needed */
+    color: #ffffff; /* Change to your preferred color */
+}
+
+.hero {
+    position: relative;
+    background: url('animations1.mp4') center/cover no-repeat;
+    text-align: center;
+    padding: 100px 0;
+}
+.hero video {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.text-overlay {
+    position: relative;
+    z-index: 1;
+    color: #ffffff; /* Adjust text color as needed */
+    text-align: center;
+    padding: 20px;
+}
+.hero h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.hero p {
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+}
+.galaxies-stars {
+    color: #fff; /* Set text color to white */
+}
+
+.content {
+    margin-bottom: 40px; /* Add some space between content sections */
+}
+
+.content h2 {
+    font-size: 2.1em; /* Increase heading font size for emphasis */
+    color: #ffcc00; /* Set heading color to a bright color */
+    margin-bottom: 10px; /* Add space below heading */
+}
+
+.content p {
+    font-size: 1.2em; /* Increase paragraph font size for better readability */
+    line-height: 1.2; /* Adjust line height for better spacing between lines */
+}
+
+.about-me {
+    position: relative;
+    text-align: center;
+    padding: 60px 0; /* Increase padding to create more space */
+    margin-bottom: 10px; /* Add margin-bottom to create space */
+}
+.about-me .profile-section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-me .profile-image {
+    margin-right: 20px;
+    margin-bottom: 40px; /* Adjust margin-bottom as needed */
+    align-self: flex-end;
+}
+
+.about-me h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.about-me p {
+    font-size: 1.2em;
+}
+
+.about-me::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.cv {
+    text-align: center;
+    padding: 60px 0;
+}
+
+.cv h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.cv .download-cv {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ffcc00;
+    color: #111;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.cv .download-cv:hover {
+    background-color: #ffffff;
+}
+
+
+.Projects h2 {
+    margin-bottom: 20px; /* Adjust the margin-bottom as needed */
+}
+
+.Projects .project {
+    max-width: 600px;
+    margin: 0 auto 40px; /* Adjust the margin as needed */
+}
+
+.Projects img {
+    max-width: 100%;
+    height: auto;
+    margin-left: 20px; /* Adjust the margin-left as needed */
+}
+
+.Projects ul {
+    list-style: none;
+    padding: 0;
+}
+
+.Projects li {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.skills {
+    text-align: center;
+    padding: 100px 0;
+
+}
+
+.skills h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+
+
+.skills .skill-icons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px; /* Adjust margin as needed */
+}
+.skills .skill-icons i {
+        font-size: 2em;
+	margin-right: 5px; 
+	margin-bottom: 5px; 
+}
+
+.skills .skill-categories {
+	text-align: center;
+	font-family: 'Garamond', serif;
+    /* Add styles for skill categories and details */
+}
+
+
+/* Add this CSS to style the Contact section */
+
+.contact {
+    text-align: center;
+    padding: 40px 0;
+}
+
+.contact h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #ffcc00; /* Adjust the color as needed */
+}
+
+.contact-info {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-info li {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #ffffff; /* Adjust the color as needed */
+}
+
+.contact-info strong {
+    color: #ffcc00; /* Adjust the color as needed */
+}
+
+.social-media-links a {
+    color: #ffcc00; /* Adjust the color as needed */
+    margin: 0 10px;
+    font-size: 1.5em;
+    transition: color 0.3s ease;
+}
+
+.social-media-links a:hover {
+    color: #ffffff; /* Adjust the color as needed */
+}
+
+
+footer {
+    text-align: center;
+}
+
+footer p {
+    font-size: 1.2em;
+}
+/* Add your styles for the review box */
+.review-box {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.review-box h3 {
+    color: #333; /* Darker color for the heading */
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.review-box label {
+    display: block;
+    margin-top: 10px;
+    color: #555; /* Darker color for labels */
+}
+
+.review-box textarea {
+    width: 100%;
+    resize: vertical;
+}
+
+.review-box button {
+    background-color: #ffcc00;
+    color: #111; /* Darker color for button text */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.review-box button:hover {
+    background-color: #ffffff;
+}
+
