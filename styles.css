@@ -362,4 +362,11 @@ footer p {
 .review-box button:hover {
     background-color: #ffffff;
 }
+@media only screen and (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+    }
+
+    /* Add more responsive styles as needed */
+}
 
