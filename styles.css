@@ -482,6 +482,10 @@ footer p {
     .contact-info li {
         font-size: 0.8em;
     }
+    .contact h2,
+    .Projects h2 {
+        margin-top: 40px; /* Add spacing between heading and content */
+    }
 
     footer p {
         font-size: 0.8em;
@@ -535,6 +539,10 @@ footer p {
 
     .cv .download-cv {
         font-size: 0.7em;
+    }
+    .contact h2,
+    .Projects h2 {
+        margin-top: 40px; /* Add spacing between heading and content */
     }
 
     .Projects h2 {
