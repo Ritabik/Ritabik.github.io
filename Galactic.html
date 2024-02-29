@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Galactic.css">
+    <title>Galactic Dynamo</title>
+<script async src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<script src="Galactic.js" defer></script>
+<style>
+       
+
+        figure {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 600px; /* Adjust the max-width as needed */
+            margin: 0 auto; /* Center the figure horizontally */
+            margin-top: 20px; /* Add margin between the figure and other content */
+        }
+
+        img {
+            width: 100%; /* Ensure the image takes the full width of its container */
+            height: auto;
+        }
+
+        figcaption {
+            max-width: 100%; /* Ensure the text doesn't exceed the width of its container */
+            margin-top: 10px; /* Add margin between the image and text */
+            text-align: justify; /* Align the text */
+        }
+
+    </style>
+</head>
+<body>
+
+
+
+
+ <header>
+<div class="container">
+	    <div class="site-title">
+<h1>Magnetohydrodynamics Project</h1>
+</div>
+	<nav>
+<ul>
+        
+	<li><a href="#introduction">Introduction</a></li>
+        <li><a href="#galactic-magnetic-fields">Galactic Magnetic Fields</a></li>
+        <li><a href="#galactic-dynamo-theory">Galactic Dynamo Theory</a></li>
+        <li><a href="#Results">Results</a></li>
+	<li><a href="#Conclusions">Conclusions</a></li>
+	<li><a href="#References">References</a></li>
+</ul>
+    </nav>
+</div>
+</header>
+
+
+    <section id="home" class="hero">
+        <div class="container">
+	  <img src="dynamo.jpg" alt="Galactic Dynamo Image">
+	<h2 class="text-on-image">Solving the Galactic diffussion and dynamo Equation using Range Kutta Method.</h2>
+        </div>
+    </section>
+
+    <section id="introduction" class="mnras">
+    <div class="content-wrapper">
+        <div class="text-wrapper">
+            <h2>Introduction</h2>
+
+            <p>Galaxy magnetohydrodynamics (MHD) stands at the forefront of astrophysical exploration, delving into the intricate dynamics governing the interplay between magnetic fields and ionized gas within galaxies. Spanning a magnetic field intensity spectrum from microgauss to milligauss, these magnetic fields permeate galaxies, wielding a profound influence on the intricacies of the interstellar medium. The theoretical underpinning of MHD relies on a sophisticated framework of equations, amalgamating the principles of fluid dynamics and electromagnetism. Within this framework, the complex interaction of magnetized plasmas in galactic environments unfolds, driven by dynamo processes fueled by fluid motions like turbulence and differential rotation.</p>
+
+            <p>Observationally, the arsenal of techniques in galactic magnetohydrodynamics includes polarimetry and synchrotron emission, critical tools for scrutinizing the distribution, structure, and strength of magnetic fields spanning diverse regions within galaxies. The invaluable insights derived from these observations contribute substantially to our understanding of pivotal astrophysical processes, from the genesis of stars to the initiation of galactic winds. Despite the intricate dance of magnetized plasmas introducing challenges, the field perseveres with ongoing advancements in observational methodologies and numerical simulations. These endeavors progressively deepen our insights, casting an illuminating beam on the evolutionary odyssey of galaxies throughout the vast cosmos.</p>
+        </div>
+
+        <div class="image-wrapper">
+            <img src="galactic_magnetic.jpg" alt="Description of Image 1" style="width: 100%; height: 350px;">
+        </div>
+    </div>
+
+</section>	
+<section id="galactic-magnetic-fields" class="mnras">
+
+    <h2>Galactic Magnetic Fields</h2>
+
+    <p>Galactic magnetic fields are intricate and omnipresent phenomena that wield profound influence over the structural, dynamic, and evolutionary aspects of galaxies. Beyond merely shaping the cosmic landscape, these magnetic fields play a pivotal role in orchestrating a myriad of astrophysical processes, ranging from the intricate dance of star formation to the intricate ballet of cosmic ray propagation. The intricate interplay between these magnetic fields and the cosmic environment is crucial for unraveling the intricate tapestry of the broader astrophysical context.</p>
+ <p>
+On a grand scale, large-scale magnetic fields extend their dominion over vast cosmic territories, traversing thousands of light-years within galaxies. These expansive fields reveal a remarkable tapestry of coherence and organization, weaving intricate patterns that extend their influence over the behavior of charged particles populating the interstellar medium. Understanding the nuances of these large-scale structures entails delving into the intricate mechanisms governing magnetic field generation, meticulous maintenance, and the consequential impact on the dynamic ballet of galactic processes. As we delve deeper into the study of galactic magnetic fields, we embark on a journey to unravel the mysteries that govern the cosmic choreography within the vast and mesmerizing realms of the universe.</p>
+
+   
+</section>
+<section id="galactic-dynamo-theory" class="mnras">
+    <h2>Galactic Dynamo Theory</h2>
+
+    <p>Galactic dynamo theory serves as a cornerstone in explaining the amplification and maintenance of galactic magnetic fields. Dynamo processes involve the conversion of kinetic energy from fluid motions within a galaxy into magnetic energy. The theoretical foundation of dynamo theory is rooted in the magnetohydrodynamic (MHD) equations, which describe the behavior of electrically conducting fluids, such as the ionized gas present in the interstellar medium.</p>
+
+    <p>Mathematically, the evolution of the magnetic field (\( \mathbf{B} \)) in a galactic environment can be expressed through the induction equation:</p>
+
+    \[
+    \frac{\partial \mathbf{B}}{\partial t} = \nabla \times (\mathbf{v} \times \mathbf{B} - \eta \nabla \times \mathbf{B})
+    \]
+<ol>
+  <li>When \( \eta \) is much larger than 1 (\( \eta \gg 1 \)):
+    \[ \frac{\partial \mathbf{B}}{\partial t} \approx -\eta \nabla^{2}\mathbf{B} \]
+    In this scenario, the evolution of the magnetic field (\( \mathbf{B} \)) is predominantly governed by magnetic diffusion. Large \( \eta \) values lead to rapid dissipation of magnetic field structures, resulting in a diffusion-dominated regime.
+  </li>
+
+  <li>When \( \eta \) is much smaller than 1 (\( \eta \ll 1 \)):
+    \[ \frac{\partial \mathbf{B}}{\partial t} \approx \nabla \times (\mathbf{v} \times \mathbf{B}) \]
+    In this regime, the induction equation is primarily influenced by the advective and rotational terms (\( \mathbf{v} \times \mathbf{B} \)), with magnetic diffusion playing a minor role. Smaller \( \eta \) values allow magnetic field structures to evolve more freely.
+  </li>
+</ol>
+
+    <p>To provide a concrete example, let us consider the mean-field dynamo theory, which describes the evolution of the mean magnetic field \(\overline{B}\)) and the small-scale magnetic fluctuations (\( \mathbf{b} \)). The governing equations are given by:</p>
+<p>
+\[
+\frac{\partial \overline{B}}{\partial t} = \nabla \times (\overline{\mathbf{v}} \times \overline{B} + \boldsymbol{\mathcal{E}} - \eta( \nabla \times \overline{B}))
+\]
+ </p>
+
+  <p>where \(\boldsymbol{\mathcal{E}} \approx \overline{{v} \times \mathbf{b}}\).</p>  
+<p>
+The mean field induction equation lies at the heart of galactic magnetohydrodynamics, describing the evolution of the mean magnetic field with a nuanced interplay of forces. The term \( \frac{\partial \overline{\mathbf{B}}}{\partial t} \) delineates the temporal changes in the mean magnetic field, shaped by intricate interactions. The component \( \nabla \times (\overline{\mathbf{v}} \times \overline{\mathbf{B}}) \) embodies the induction driven by fluid motions, contributing to the amplification of the mean magnetic field. Additionally, the electromotive force \( \mathbf{E} \) introduces complexity, arising from turbulent motions within the galactic medium.
+</p>
+
+<p>
+However, the term \( - \eta \nabla \times \overline{\mathbf{B}} \) introduces magnetic diffusion, where \( \eta \) represents the magnetic diffusivity. In scenarios with a significantly large \( \eta \), magnetic diffusion dominates, resulting in a damping effect on variations in the mean magnetic field. Conversely, when \( \eta \) is small, the influence of magnetic diffusion diminishes, allowing fluid motions and turbulent processes to exert a more pronounced role in shaping the evolution of the mean magnetic field. This delicate balance between induction, electromotive forces, and magnetic diffusion intricately governs the behavior of galactic magnetic fields, revealing the captivating dynamics within the vast cosmic landscape.
+</p>
+
+
+  <p>Example of the mean field dynamo behaviour</p>
+
+	<figure>
+        
+        <img src="example.png" alt="Description of Image 1" >
+        <figcaption >
+Fluid elements acquire a spin as they rise or fall due to the Coriolis force,leading to a preferential sign of the mean kinetic helicity density in each hemisphere.This explains the mean kinetic helicity density of the turbulent motions is non-zero in each hemisphere.</figcaption>
+    </figure>
+</section>
+
+<section id="Results" class="mnras">
+<h2>Results</h2>
+        <!-- ... (Your existing Mean Field Dynamo Example content) ... -->
+    </section>
+
+<section id="Conclusions" class="mnras">
+<h2>Conclusions</h2>
+        <!-- ... (Your existing Mean Field Dynamo Example content) ... -->
+    </section>
+
+<section id="References" class="mnras">
+<h2>References</h2>
+        <!-- ... (Your existing Mean Field Dynamo Example content) ... -->
+    </section>
+
+<button id="scrollToTopBtn">Scroll to Top</button>
+
+
+
+</body>
+</html>
