@@ -367,15 +367,16 @@ footer p {
 /* Your existing CSS styles */
 
 /* Media query for devices with a maximum width of 768px (typical tablets and smaller screens) */
-@media only screen and (max-width: 768px) {
-    /* Your existing styles for tablets and smaller screens */
+/* Your existing CSS styles */
 
+/* Media query for devices with a maximum width of 768px (typical tablets and smaller screens) */
+@media only screen and (max-width: 768px) {
     body {
         font-size: 16px;
     }
 
     header {
-        padding: 10px 0;
+        padding: 10px 20px;
     }
 
     header h1 {
@@ -394,8 +395,9 @@ footer p {
 
     .site-title {
         max-width: 100%;
-        margin-bottom: 10px;
+        margin-bottom: 20px;
         text-align: center;
+        padding: 0 20px;
     }
 
     .site-title h1 {
@@ -404,11 +406,11 @@ footer p {
     }
 
     .site-title p {
-        font-size: 1em;
+        font-size: 0.8em;
     }
 
     .hero {
-        padding: 80px 0;
+        padding: 80px 20px;
     }
 
     .hero h1 {
@@ -417,11 +419,11 @@ footer p {
     }
 
     .hero p {
-        font-size: 1em;
+        font-size: 0.8em;
     }
 
     .about-me {
-        padding: 40px 0;
+        padding: 40px 20px;
     }
 
     .about-me .profile-section {
@@ -440,11 +442,11 @@ footer p {
     }
 
     .about-me p {
-        font-size: 1em;
+        font-size: 0.8em;
     }
 
     .cv {
-        padding: 40px 0;
+        padding: 40px 20px;
     }
 
     .cv h2 {
@@ -471,8 +473,7 @@ footer p {
     }
 
     .Projects ul li {
-        font-size: 1em;
-        margin-bottom: 8px;
+        font-size: 0.8em;
     }
 
     .skills h2 {
@@ -487,7 +488,7 @@ footer p {
     }
 
     .skills .skill-categories {
-        font-size: 1em;
+        font-size: 0.8em;
     }
 
     .contact h2 {
@@ -496,12 +497,11 @@ footer p {
     }
 
     .contact-info li {
-        font-size: 1em;
-        margin-bottom: 8px;
+        font-size: 0.8em;
     }
 
     footer p {
-        font-size: 1em;
+        font-size: 0.8em;
     }
 }
 
