@@ -391,3 +391,27 @@ footer p {
 
     /* Adjust other styles for smaller screens */
 }
+@media only screen and (max-width: 600px) {
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    section {
+        padding: 10px;
+    }
+
+    /* Adjust other styles for smaller screens */
+}
+
+/* Additional media query for tablets or smaller desktop screens */
+@media only screen and (max-width: 992px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    section {
+        padding: 15px;
+    }
+
+    /* Adjust other styles for medium-sized screens */
+}
