@@ -362,35 +362,6 @@ footer p {
 .review-box button:hover {
     background-color: #ffffff;
 }
-@media only screen and (max-width: 768px) {
-    .container {
-        max-width: 768px;
-        /* Adjust styles for tablets */
-    }
-
-    /* Additional styles for smaller screens go here */
-}
-
-/* Media query for smartphones */
-@media only screen and (max-width: 480px) {
-    .container {
-        max-width: 480px;
-        /* Adjust styles for smartphones */
-    }
-
-    /* Additional styles for even smaller screens go here */
-}
-@media only screen and (max-width: 600px) {
-    header h1 {
-        font-size: 1.5em;
-    }
-
-    section {
-        padding: 10px;
-    }
-
-    /* Adjust other styles for smaller screens */
-}
 @media only screen and (max-width: 600px) {
     header h1 {
         font-size: 1.5em;
@@ -414,4 +385,17 @@ footer p {
     }
 
     /* Adjust other styles for medium-sized screens */
+}
+
+/* Additional media query for larger screens, e.g., desktops */
+@media only screen and (min-width: 1200px) {
+    header h1 {
+        font-size: 3em;
+    }
+
+    section {
+        padding: 30px;
+    }
+
+    /* Adjust other styles for larger screens */
 }
