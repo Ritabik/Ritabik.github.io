@@ -372,6 +372,10 @@ footer p {
 /* Media query for devices with a maximum width of 768px (typical tablets and smaller screens) */
 /* Media queries for responsive design */
 @media only screen and (max-width: 768px) {
+    
+    body {
+        overflow-x: hidden; /* Hide horizontal scrollbar on mobile */
+    }
     .container {
         flex-direction: column;
         align-items: center;
@@ -487,6 +491,8 @@ footer p {
 @media only screen and (max-width: 480px) {
     body {
         font-size: 14px;
+        overflow-x: hidden; /* Hide horizontal scrollbar on mobile */
+        
     }
     .container {
         padding: 5px; /* Adjusted padding for smaller screens */
