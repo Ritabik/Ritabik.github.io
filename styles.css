@@ -370,43 +370,20 @@ footer p {
 /* Your existing CSS styles */
 
 /* Media query for devices with a maximum width of 768px (typical tablets and smaller screens) */
+/* Media queries for responsive design */
 @media only screen and (max-width: 768px) {
-    body {
-        font-size: 16px;
-    }
-
-    header {
-        padding: 10px 20px;
-    }
-
-    header h1 {
-        font-size: 1.8em;
-        margin-bottom: 10px;
-    }
-
-    nav ul {
+    .container {
         flex-direction: column;
         align-items: center;
     }
 
-    nav ul li {
-        margin: 10px 0;
+    nav ul {
+        margin-top: 20px;
     }
 
     .site-title {
-        max-width: 100%;
+        padding: 20px;
         margin-bottom: 20px;
-        text-align: center;
-        padding: 0 20px;
-    }
-
-    .site-title h1 {
-        font-size: 2em;
-        margin-bottom: 10px;
-    }
-
-    .site-title p {
-        font-size: 0.8em;
     }
 
     .hero {
@@ -460,6 +437,7 @@ footer p {
     }
 
     .Projects h2 {
+        font-size: 1.8em;
         margin-bottom: 10px;
     }
 
@@ -583,5 +561,3 @@ footer p {
         font-size: 0.8em;
     }
 }
-
-/* Add more media queries as needed */
