@@ -364,8 +364,12 @@ footer p {
 }
 /* Your existing CSS styles */
 
+/* Your existing CSS styles */
+
 /* Media query for devices with a maximum width of 768px (typical tablets and smaller screens) */
 @media only screen and (max-width: 768px) {
+    /* Your existing styles for tablets and smaller screens */
+
     body {
         font-size: 16px;
     }
@@ -498,6 +502,85 @@ footer p {
 
     footer p {
         font-size: 1em;
+    }
+}
+
+/* Media query for devices with a maximum width of 480px (typical smartphones) */
+@media only screen and (max-width: 480px) {
+    body {
+        font-size: 14px;
+    }
+
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    .site-title h1 {
+        font-size: 1.8em;
+    }
+
+    .site-title p {
+        font-size: 0.8em;
+    }
+
+    .hero h1 {
+        font-size: 1.8em;
+    }
+
+    .hero p {
+        font-size: 0.8em;
+    }
+
+    .about-me h2 {
+        font-size: 1.5em;
+    }
+
+    .about-me p {
+        font-size: 0.8em;
+    }
+
+    .cv h2 {
+        font-size: 1.5em;
+    }
+
+    .cv .download-cv {
+        font-size: 0.7em;
+    }
+
+    .Projects h2 {
+        font-size: 1.5em;
+    }
+
+    .Projects .project h3 {
+        font-size: 1.2em;
+    }
+
+    .Projects ul li {
+        font-size: 0.8em;
+    }
+
+    .skills h2 {
+        font-size: 1.5em;
+    }
+
+    .skills .skill-icons i {
+        font-size: 1.2em;
+    }
+
+    .skills .skill-categories {
+        font-size: 0.8em;
+    }
+
+    .contact h2 {
+        font-size: 1.5em;
+    }
+
+    .contact-info li {
+        font-size: 0.8em;
+    }
+
+    footer p {
+        font-size: 0.8em;
     }
 }
 
