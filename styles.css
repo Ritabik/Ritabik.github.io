@@ -372,6 +372,12 @@ footer p {
     }
 
     /* Adjust other styles for smaller screens */
+
+    /* Ensure images or other elements are responsive */
+    img {
+        max-width: 100%;
+        height: auto;
+    }
 }
 
 /* Additional media query for tablets or smaller desktop screens */
