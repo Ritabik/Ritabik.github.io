@@ -380,3 +380,14 @@ footer p {
 
     /* Additional styles for even smaller screens go here */
 }
+@media only screen and (max-width: 600px) {
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    section {
+        padding: 10px;
+    }
+
+    /* Adjust other styles for smaller screens */
+}
