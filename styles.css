@@ -379,6 +379,7 @@ footer p {
     .container {
         flex-direction: column;
         align-items: center;
+        width: 100vw; 
     }
 
     nav ul {
@@ -491,11 +492,13 @@ footer p {
 @media only screen and (max-width: 480px) {
     body {
         font-size: 14px;
-        overflow-x: hidden; /* Hide horizontal scrollbar on mobile */
+        overflow-x: hidden;
+         /* Hide horizontal scrollbar on mobile */
         
     }
     .container {
-        padding: 5px; /* Adjusted padding for smaller screens */
+        padding: 5px;
+        width: 100vw;  /* Adjusted padding for smaller screens */
     }
 
     header h1 {
