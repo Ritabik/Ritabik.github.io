@@ -362,46 +362,143 @@ footer p {
 .review-box button:hover {
     background-color: #ffffff;
 }
-@media only screen and (max-width: 600px) {
+/* Your existing CSS styles */
+
+/* Media query for devices with a maximum width of 768px (typical tablets and smaller screens) */
+@media only screen and (max-width: 768px) {
+    body {
+        font-size: 16px;
+    }
+
+    header {
+        padding: 10px 0;
+    }
+
     header h1 {
-        font-size: 1.5em;
+        font-size: 1.8em;
+        margin-bottom: 10px;
     }
 
-    section {
-        padding: 10px;
+    nav ul {
+        flex-direction: column;
+        align-items: center;
     }
 
-    /* Adjust other styles for smaller screens */
+    nav ul li {
+        margin: 10px 0;
+    }
 
-    /* Ensure images or other elements are responsive */
-    img {
+    .site-title {
         max-width: 100%;
-        height: auto;
+        margin-bottom: 10px;
+        text-align: center;
     }
-}
 
-/* Additional media query for tablets or smaller desktop screens */
-@media only screen and (max-width: 992px) {
-    header h1 {
+    .site-title h1 {
         font-size: 2em;
+        margin-bottom: 10px;
     }
 
-    section {
-        padding: 15px;
+    .site-title p {
+        font-size: 1em;
     }
 
-    /* Adjust other styles for medium-sized screens */
+    .hero {
+        padding: 80px 0;
+    }
+
+    .hero h1 {
+        font-size: 2em;
+        margin-bottom: 10px;
+    }
+
+    .hero p {
+        font-size: 1em;
+    }
+
+    .about-me {
+        padding: 40px 0;
+    }
+
+    .about-me .profile-section {
+        flex-direction: column;
+    }
+
+    .about-me .profile-image {
+        margin-right: 0;
+        margin-bottom: 20px;
+        align-self: center;
+    }
+
+    .about-me h2 {
+        font-size: 1.8em;
+        margin-bottom: 10px;
+    }
+
+    .about-me p {
+        font-size: 1em;
+    }
+
+    .cv {
+        padding: 40px 0;
+    }
+
+    .cv h2 {
+        font-size: 1.8em;
+        margin-bottom: 10px;
+    }
+
+    .cv .download-cv {
+        padding: 8px 16px;
+        font-size: 0.8em;
+    }
+
+    .Projects h2 {
+        margin-bottom: 10px;
+    }
+
+    .Projects .project {
+        max-width: 100%;
+        margin: 0 auto 20px;
+    }
+
+    .Projects img {
+        margin-left: 0;
+    }
+
+    .Projects ul li {
+        font-size: 1em;
+        margin-bottom: 8px;
+    }
+
+    .skills h2 {
+        font-size: 1.8em;
+        margin-bottom: 10px;
+    }
+
+    .skills .skill-icons i {
+        font-size: 1.5em;
+        margin-right: 3px;
+        margin-bottom: 3px;
+    }
+
+    .skills .skill-categories {
+        font-size: 1em;
+    }
+
+    .contact h2 {
+        font-size: 1.8em;
+        margin-bottom: 10px;
+    }
+
+    .contact-info li {
+        font-size: 1em;
+        margin-bottom: 8px;
+    }
+
+    footer p {
+        font-size: 1em;
+    }
 }
 
-/* Additional media query for larger screens, e.g., desktops */
-@media only screen and (min-width: 1200px) {
-    header h1 {
-        font-size: 3em;
-    }
-
-    section {
-        padding: 30px;
-    }
-
-    /* Adjust other styles for larger screens */
-}
+/* Add more media queries as needed */
