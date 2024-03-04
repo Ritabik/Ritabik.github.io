@@ -117,6 +117,7 @@ img {
     height: auto;
 }
 
+
 figcaption {
     max-width: 100%;
     margin-top: 10px;
@@ -124,7 +125,30 @@ figcaption {
     color: #ccc; /* Adjust the text color */
 }
 
+.results-content {
+        display: flex;
+        flex-wrap: wrap; /* Allow items to wrap to the next line if there's not enough space */
+        gap: 20px; /* Add spacing between items */
+    }
 
+    .results-content h3 {
+        border-bottom: 2px solid #333; /* Dark underline for headings */
+        padding-bottom: 5px;
+        margin-bottom: 10px;
+    }
+
+    .results-content img {
+        max-width: 40%; /* Make sure images don't exceed their container */
+        height: auto; /* Maintain aspect ratio */
+        border: 1px solid #ccc; /* Add a border around each image */
+        border-radius: 5px; /* Add rounded corners */
+        transition: transform 0.3s ease; /* Add a smooth transition effect */
+        cursor: pointer; /* Add a pointer cursor on hover */
+    }
+
+    .results-content img:hover {
+        transform: scale(1.1); /* Enlarge the image slightly on hover */
+    }
 /* Scroll to Top Button Styles */
 #scrollToTopBtn {
     position: fixed;
