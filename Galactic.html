@@ -47,9 +47,10 @@
 <ul>
         
 	<li><a href="#introduction">Introduction</a></li>
-        <li><a href="#galactic-magnetic-fields">Galactic Magnetic Fields</a></li>
-        <li><a href="#galactic-dynamo-theory">Galactic Dynamo Theory</a></li>
-        <li><a href="#Results">Results</a></li>
+    <li><a href="#galactic-magnetic-fields">Galactic Magnetic Fields</a></li>
+    <li><a href="#galactic-dynamo-theory">Galactic Dynamo Theory</a></li>
+    <li><a href="#Methods">Methods</a></li>
+    <li><a href="#Results">Results</a></li>
 	<li><a href="#Conclusions">Conclusions</a></li>
 	<li><a href="#References">References</a></li>
 </ul>
@@ -139,6 +140,114 @@ However, the term \( - \eta \nabla \times \overline{\mathbf{B}} \) introduces ma
 Fluid elements acquire a spin as they rise or fall due to the Coriolis force,leading to a preferential sign of the mean kinetic helicity density in each hemisphere.This explains the mean kinetic helicity density of the turbulent motions is non-zero in each hemisphere.</figcaption>
     </figure>
 </section>
+<section id="Methods" class="mnras">
+    <p>These are some numerical methods to solve any differential equation</p>
+    <h2>Time-Stepping Routine: Explicit Euler Method</h2>
+
+    <p>
+        In numerical simulations, the explicit Euler method is a simple time-stepping algorithm. It updates the solution at each time step using the formula:
+    </p>
+
+    <div class="equation">
+        \[ u_{n+1} = u_n + \Delta t \cdot f(u_n, t_n) \]
+    </div>
+
+    <p>
+        Here:
+        <ul>
+            <li>\( u_{n+1} \) is the solution at the next time step.</li>
+            <li>\( u_n \) is the solution at the current time step.</li>
+            <li>\( \Delta t \) is the time step size.</li>
+            <li>\( f(u_n, t_n) \) represents the derivative of \( u \) with respect to time at \( t_n \).</li>
+        </ul>
+    </p>
+    <h2>Finite Differencing Routine: Central Difference Scheme</h2>
+
+    <p>
+        In numerical simulations, the central difference scheme is a finite differencing method used to approximate second-order spatial derivatives. For a function \( u \) with respect to space (\( x \)), the central difference formula for the second derivative is given by:
+    </p>
+
+    <div class="equation">
+        \[ \frac{\partial^2 u}{\partial x^2} \approx \frac{u_{i+1} - 2u_i + u_{i-1}}{\Delta x^2} \]
+    </div>
+
+    <p>
+        Here:
+        <ul>
+            <li>\( u_{i+1} \) is the value at the grid point to the right.</li>
+            <li>\( u_i \) is the value at the current grid point.</li>
+            <li>\( u_{i-1} \) is the value at the grid point to the left.</li>
+            <li>\( \Delta x \) represents the spatial grid spacing.</li>
+        </ul>
+    </p>
+    <h2>Runge-Kutta Method</h2>
+
+    <div class="content">
+
+        <p>
+            The Runge-Kutta method is a widely used numerical technique for solving ordinary differential equations (ODEs). It provides a more accurate solution compared to simpler methods like Euler's method. The fourth-order Runge-Kutta method, denoted as RK4, is particularly popular due to its balance between accuracy and computational efficiency.
+        </p>
+
+        <p>
+            The general formulation of the RK4 method involves four steps:
+        </p>
+
+        <div class="equation">
+            \[ k_1 = h \cdot f(x_n, y_n) \]
+            \[ k_2 = h \cdot f(x_n + \frac{h}{2}, y_n + \frac{k_1}{2}) \]
+            \[ k_3 = h \cdot f(x_n + \frac{h}{2}, y_n + \frac{k_2}{2}) \]
+            \[ k_4 = h \cdot f(x_n + h, y_n + k_3) \]
+            \[ y_{n+1} = y_n + \frac{1}{6}(k_1 + 2k_2 + 2k_3 + k_4) \]
+        </div>
+
+        <p>
+            Here, \(x_n\) and \(y_n\) are the current values of the independent and dependent variables, respectively. \(h\) is the step size, and \(f(x, y)\) is the given function defining the ODE. The RK4 method offers a good compromise between accuracy and computational efficiency, making it suitable for a wide range of applications.
+        </p>
+
+        <p>
+            The method is particularly valuable in physics, engineering, and other fields where differential equations model dynamic systems. Its efficiency comes from the iterative nature of the calculations, allowing for the approximation of complex solutions. Researchers and engineers often use RK4 when analytical solutions are difficult or impossible to obtain.
+        </p>
+
+        <p>
+            In conclusion, the Runge-Kutta method, especially RK4, is a powerful numerical tool for solving ordinary differential equations. Its accuracy and efficiency make it a staple in the computational toolbox of scientists and engineers, contributing to advancements in various scientific disciplines.
+        </p>
+
+    </div>
+    <h2>Some other numerical methods</h2>
+    <h3>1. Adams-Moulton Method (Predictor-Corrector)</h3>
+<p>
+    <strong>Description:</strong> Adams-Moulton is an implicit predictor-corrector method. It predicts the next value using the Adams-Bashforth method (explicit), then corrects it using implicit methods. It strikes a balance between stability and accuracy.
+</p>
+<p>
+    <strong>Use:</strong> Suitable for stiff ODEs and situations where implicit methods are preferred for stability.
+</p>
+
+<h3>2. Fourth-Order Runge-Kutta (RK4)</h3>
+<p>
+    <strong>Description:</strong> RK4 is a widely used explicit method. It involves four evaluations per step, calculating a weighted average of slopes to approximate the next value. RK4 is known for its simplicity and good accuracy.
+</p>
+<p>
+    <strong>Use:</strong> A general-purpose method suitable for a wide range of ODEs, offering a good compromise between accuracy and computational cost.
+</p>
+
+<h3>3. Adams-Bashforth Methods</h3>
+<p>
+    <strong>Description:</strong> Adams-Bashforth methods are explicit multi-step techniques. They predict the next value using a weighted sum of previous function values and their derivatives. Higher-order methods provide increased accuracy.
+</p>
+<p>
+    <strong>Use:</strong> Effective for non-stiff ODEs when historical data is available for prediction.
+</p>
+
+<h3>4. Implicit Methods (e.g., Backward Euler)</h3>
+<p>
+    <strong>Description:</strong> Implicit methods involve solving equations at each step, making them more stable for stiff ODEs. Backward Euler is an implicit method where the derivative at the endpoint of the step is used for prediction.
+</p>
+<p>
+    <strong>Use:</strong> Preferred for stiff ODEs where stability is crucial, and implicit solutions are necessary.
+</p>
+
+           
+        </section>
 
 <section id="Results" class="mnras">
 <h2>Results</h2>
