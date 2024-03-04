@@ -141,8 +141,9 @@ Fluid elements acquire a spin as they rise or fall due to the Coriolis force,lea
     </figure>
 </section>
 <section id="Methods" class="mnras">
+    <h2>Methods</h2>
     <p>These are some numerical methods to solve any differential equation</p>
-    <h2>Time-Stepping Routine: Explicit Euler Method</h2>
+    <h3>Time-Stepping Routine: Explicit Euler Method</h3>
 
     <p>
         In numerical simulations, the explicit Euler method is a simple time-stepping algorithm. It updates the solution at each time step using the formula:
@@ -161,7 +162,7 @@ Fluid elements acquire a spin as they rise or fall due to the Coriolis force,lea
             <li>\( f(u_n, t_n) \) represents the derivative of \( u \) with respect to time at \( t_n \).</li>
         </ul>
     </p>
-    <h2>Finite Differencing Routine: Central Difference Scheme</h2>
+    <h3>Finite Differencing Routine: Central Difference Scheme</h3>
 
     <p>
         In numerical simulations, the central difference scheme is a finite differencing method used to approximate second-order spatial derivatives. For a function \( u \) with respect to space (\( x \)), the central difference formula for the second derivative is given by:
@@ -180,7 +181,7 @@ Fluid elements acquire a spin as they rise or fall due to the Coriolis force,lea
             <li>\( \Delta x \) represents the spatial grid spacing.</li>
         </ul>
     </p>
-    <h2>Runge-Kutta Method</h2>
+    <h3>Runge-Kutta Method</h3>
 
     
 
@@ -213,8 +214,8 @@ Fluid elements acquire a spin as they rise or fall due to the Coriolis force,lea
         </p>
 
     
-    <h2>Some other numerical methods</h2>
-    <h3>1. Adams-Moulton Method (Predictor-Corrector)</h3>
+    <h3>Some other numerical methods</h3>
+    <h4>1. Adams-Moulton Method (Predictor-Corrector)</h4>
 <p>
     <strong>Description:</strong> Adams-Moulton is an implicit predictor-corrector method. It predicts the next value using the Adams-Bashforth method (explicit), then corrects it using implicit methods. It strikes a balance between stability and accuracy.
 </p>
@@ -222,7 +223,7 @@ Fluid elements acquire a spin as they rise or fall due to the Coriolis force,lea
     <strong>Use:</strong> Suitable for stiff ODEs and situations where implicit methods are preferred for stability.
 </p>
 
-<h3>2. Fourth-Order Runge-Kutta (RK4)</h3>
+<h4>2. Fourth-Order Runge-Kutta (RK4)</h4>
 <p>
     <strong>Description:</strong> RK4 is a widely used explicit method. It involves four evaluations per step, calculating a weighted average of slopes to approximate the next value. RK4 is known for its simplicity and good accuracy.
 </p>
@@ -230,7 +231,7 @@ Fluid elements acquire a spin as they rise or fall due to the Coriolis force,lea
     <strong>Use:</strong> A general-purpose method suitable for a wide range of ODEs, offering a good compromise between accuracy and computational cost.
 </p>
 
-<h3>3. Adams-Bashforth Methods</h3>
+<h4>3. Adams-Bashforth Methods</h4>
 <p>
     <strong>Description:</strong> Adams-Bashforth methods are explicit multi-step techniques. They predict the next value using a weighted sum of previous function values and their derivatives. Higher-order methods provide increased accuracy.
 </p>
@@ -238,7 +239,7 @@ Fluid elements acquire a spin as they rise or fall due to the Coriolis force,lea
     <strong>Use:</strong> Effective for non-stiff ODEs when historical data is available for prediction.
 </p>
 
-<h3>4. Implicit Methods (e.g., Backward Euler)</h3>
+<h4>4. Implicit Methods (e.g., Backward Euler)</h4>
 <p>
     <strong>Description:</strong> Implicit methods involve solving equations at each step, making them more stable for stiff ODEs. Backward Euler is an implicit method where the derivative at the endpoint of the step is used for prediction.
 </p>
