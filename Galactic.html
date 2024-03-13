@@ -1,195 +1,200 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Galactic.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Galactic Dynamo</title>
-<script async src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-<script src="Galactic.js" defer></script>
-<style>
-       
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="galactic_style.css">
 
-        figure {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            max-width: 600px; /* Adjust the max-width as needed */
-            margin: 0 auto; /* Center the figure horizontally */
-            margin-top: 20px; /* Add margin between the figure and other content */
-        }
-
-        img {
-            width: 100%; /* Ensure the image takes the full width of its container */
-            height: auto;
-        }
-
-        figcaption {
-            max-width: 100%; /* Ensure the text doesn't exceed the width of its container */
-            margin-top: 10px; /* Add margin between the image and text */
-            text-align: justify; /* Align the text */
-        }
-        u {
-            text-decoration: underline;
-        }
-
-    </style>
 </head>
-<body>
+
+<body class="bg-dark">
+    <div class="container">
+
+        <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Magnetohydrodynamics Project</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav ms-auto">
+                        <a class="nav-link active" href="#introduction">Introduction</a>
+                        <a class="nav-link active" href="#galactic-magnetic-fields">Galactic Magnetic Fields</a>
+                        <a class="nav-link active" href="#galactic-dynamo-theory">Galactic Dynamo Theory</a>
+                        <a class="nav-link active" href="#Methods">Methods</a>
+                        <a class="nav-link active" href="#Results">Results</a>
+                        <a class="nav-link active" href="#Conclusions">Conclusions</a>
+                        <a class="nav-link active" href="#References">References</a>
+                        <!-- <a class="nav-link disabled">Disabled</a> -->
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <body>
+            <div class="cover-container">
+                <!-- rounded corner -->
+                <img src="dynamo.jpg" alt="Your Image" width="100%" height="400 px" style="border-radius: 20px;">
+                <div class="centered-text">Solving the Galactic dynamo Problems using Numerical Methods</div>
+            </div>
+        </body>
 
 
+        <section class="front-section py-5" id="introduction">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-8 text-light">
+                        <p class="subsection mnras">Introduction</p>
+                        <p>
+                            Galaxy magnetohydrodynamics (MHD) stands at the forefront of astrophysical exploration, delving into the intricate dynamics governing the interplay between magnetic fields and ionized gas within galaxies. Spanning a magnetic field intensity spectrum from microgauss to milligauss, these magnetic fields permeate galaxies, wielding a profound influence on the intricacies of the interstellar medium. The theoretical underpinning of MHD relies on a sophisticated framework of equations, amalgamating the principles of fluid dynamics and electromagnetism. Within this framework, the complex interaction of magnetized plasmas in galactic environments unfolds, driven by dynamo processes fueled by fluid motions like turbulence and differential rotation.
+                        </p>
+
+                        <p>
+                            Observationally, the arsenal of techniques in galactic magnetohydrodynamics includes polarimetry and synchrotron emission, critical tools for scrutinizing the distribution, structure, and strength of magnetic fields spanning diverse regions within galaxies. The invaluable insights derived from these observations contribute substantially to our understanding of pivotal astrophysical processes, from the genesis of stars to the initiation of galactic winds. Despite the intricate dance of magnetized plasmas introducing challenges, the field perseveres with ongoing advancements in observational methodologies and numerical simulations. These endeavors progressively deepen our insights, casting an illuminating beam on the evolutionary odyssey of galaxies throughout the vast cosmos.
+                        </p>
+                    </div>
+                    <div class="col-lg-4">
+                        <img src="galactic_magnetic.jpg" alt="intro aesthetic image">
+                    </div>
+                </div>
+            </div>
+        </section>
 
 
- <header>
-<div class="container">
-	    <div class="site-title">
-<h1>Magnetohydrodynamics Project</h1>
-</div>
-	<nav>
-<ul>
+        <section class="container my-5 text-light" id="galactic-magnetic-fields">
+            <h2 class="text-center mb-5 mnras">Galactic Magnetic Fields</h2>
+            <div class="row align-items-center">
+                <p>
+                    Galactic magnetic fields are intricate and omnipresent phenomena that wield profound influence over the structural, dynamic, and evolutionary aspects of galaxies. Beyond merely shaping the cosmic landscape, these magnetic fields play a pivotal role in orchestrating a myriad of astrophysical processes, ranging from the intricate dance of star formation to the intricate ballet of cosmic ray propagation. The intricate interplay between these magnetic fields and the cosmic environment is crucial for unraveling the intricate tapestry of the broader astrophysical context.
+                </p>
+                <p>
+                    On a grand scale, large-scale magnetic fields extend their dominion over vast cosmic territories, traversing thousands of light-years within galaxies. These expansive fields reveal a remarkable tapestry of coherence and organization, weaving intricate patterns that extend their influence over the behavior of charged particles populating the interstellar medium. Understanding the nuances of these large-scale structures entails delving into the intricate mechanisms governing magnetic field generation, meticulous maintenance, and the consequential impact on the dynamic ballet of galactic processes. As we delve deeper into the study of galactic magnetic fields, we embark on a journey to unravel the mysteries that govern the cosmic choreography within the vast and mesmerizing realms of the universe.
+                </p>
+            </div>
+        </section>
+
+
+        <section class="container my-5 text-light" id="galactic-dynamo-theory">
+            <h2 class="text-center mb-5 mnras">Galactic Dynamo Theory</h2>
+            <div class="row align-items-center">
+                <p>
+                    Galactic dynamo theory serves as a cornerstone in explaining the amplification and maintenance of galactic magnetic fields. Dynamo processes involve the conversion of kinetic energy from fluid motions within a galaxy into magnetic energy. The theoretical foundation of dynamo theory is rooted in the magnetohydrodynamic (MHD) equations, which describe the behavior of electrically conducting fluids, such as the ionized gas present in the interstellar medium.
+                </p>
+
+                <p>Mathematically, the evolution of the magnetic field (\( \mathbf{B} \)) in a galactic environment can be expressed through the induction equation:</p>
+
+                \[
+                    \frac{\partial \mathbf{B}}{\partial t} = \nabla \times (\mathbf{v} \times \mathbf{B} - \eta \nabla
+                    \times
+                    \mathbf{B})
+                \]
+                <ol>
+                    <li>When \( \eta \) is much larger than 1 (\( \eta \gg 1 \)): \[ \frac{\partial \mathbf{B}}{\partial t} \approx -\eta \nabla^{2}\mathbf{B} \] In this scenario, the evolution of the magnetic field (\( \mathbf{B} \)) is predominantly governed by magnetic diffusion. Large \( \eta \) values lead to rapid dissipation of magnetic field structures, resulting in a diffusion-dominated regime.
+                    </li>
+
+                    <li>When \( \eta \) is much smaller than 1 (\( \eta \ll 1 \)):
+
+                        \[
+                            \frac{\partial \mathbf{B}}{\partial t} \approx \nabla \times (\mathbf{v} \times \mathbf{B})
+                        \]
+
+                        In this regime, the induction equation is primarily influenced by the advective and rotationalterms (\(\mathbf{v} \times \mathbf{B} \)), with magnetic diffusion playing a minor role. Smaller \( \eta\) values allow magnetic field structures to evolve more freely.
+                    </li>
+                </ol>
+
+                <p>To provide a concrete example, let us consider the mean-field dynamo theory, which describes the evolution of the mean magnetic field \(\overline{B}\) and the small-scale magnetic fluctuations (\( \mathbf{b} \)). The governing equations are given by:</p>
+                <p>
+                    \[
+                        \frac{\partial \overline{B}}{\partial t} = \nabla \times (\overline{\mathbf{v}} \times \overline{B}
+                        +
+                        \boldsymbol{\mathcal{E}} - \eta( \nabla \times \overline{B}))
+                    \]
+                </p>
+
+                <p>where \(\boldsymbol{\mathcal{E}} \approx \overline{{v} \times \mathbf{b}}\).</p>
+                <p>
+                    The mean field induction equation lies at the heart of galactic magnetohydrodynamics, describing the evolution of the mean magnetic field with a nuanced interplay of forces. The term \( \frac{\partial \overline{\mathbf{B}}}{\partial t} \) delineates the temporal changes in the mean magnetic field, shaped by intricate interactions. The component \( \nabla \times (\overline{\mathbf{v}} \times \overline{\mathbf{B}}) \) embodies the induction driven by fluid motions, contributing to the amplification of the mean magnetic field. Additionally, the electromotive force \( \mathbf{E} \) introduces complexity, arising from turbulent motions within the galactic medium.
+                </p>
+
+                <p>
+                    However, the term \( - \eta \nabla \times \overline{\mathbf{B}} \) introduces magnetic diffusion, where \( \eta \) represents the magnetic diffusivity. In scenarios with a significantly large \( \eta \), magnetic diffusion dominates, resulting in a damping effect on variations in the mean magnetic field. Conversely, when \( \eta \) is small, the influence of magnetic diffusion diminishes, allowing fluid motions and turbulent processes to exert a more pronounced role in shaping the evolution of the mean magnetic field. This delicate balance between induction, electromotive forces, and magnetic diffusion intricately governs the behavior of galactic magnetic fields, revealing the captivating dynamics within the vast cosmic landscape.
+                </p>
+
+                <p>Example of the mean field dynamo behaviour</p>
+
+                <figure>
+                    <img src="example.png" alt="Description of Image 1" style="display: block; margin-left: auto; margin-right: auto;">
+                    <figcaption>
+                        Fluid elements acquire a spin as they rise or fall due to the Coriolis force,leading to a preferential sign of the mean kinetic helicity density in each hemisphere.This explains the mean kinetic helicity density of the turbulent motions is non-zero in each hemisphere.
+                    </figcaption>
+                </figure>
+
+            </div>
+        </section>
+
         
-	<li><a href="#introduction">Introduction</a></li>
-    <li><a href="#galactic-magnetic-fields">Galactic Magnetic Fields</a></li>
-    <li><a href="#galactic-dynamo-theory">Galactic Dynamo Theory</a></li>
-    <li><a href="#Methods">Methods</a></li>
-    <li><a href="#Results">Results</a></li>
-	<li><a href="#Conclusions">Conclusions</a></li>
-	<li><a href="#References">References</a></li>
-</ul>
-    </nav>
-</div>
-</header>
 
 
-    <section id="home" class="hero">
-        <div class="container">
-	  <img src="dynamo.jpg" alt="Galactic Dynamo Image">
-	<h2 class="text-on-image">Solving the Galactic dynamo Problems using Numerical Methods.</h2>
-        </div>
-    </section>
+        <section class="container my-5 text-light" id="Methods">
+            <h2 class="text-center mb-5 mnras">Methods</h2>
+            <div class="row align-items-center">
+                <p>These are some numerical methods to solve any differential equation</p>
+        <h3><u>Time-Stepping Routine: Explicit Euler Method</u></h3>
 
-    <section id="introduction" class="mnras">
-    <div class="content-wrapper">
-        <div class="text-wrapper">
-            <h2>Introduction</h2>
+        <p>
+            In numerical simulations, the explicit Euler method is a simple time-stepping algorithm. It updates the
+            solution at each time step using the formula:
+        </p>
 
-            <p>Galaxy magnetohydrodynamics (MHD) stands at the forefront of astrophysical exploration, delving into the intricate dynamics governing the interplay between magnetic fields and ionized gas within galaxies. Spanning a magnetic field intensity spectrum from microgauss to milligauss, these magnetic fields permeate galaxies, wielding a profound influence on the intricacies of the interstellar medium. The theoretical underpinning of MHD relies on a sophisticated framework of equations, amalgamating the principles of fluid dynamics and electromagnetism. Within this framework, the complex interaction of magnetized plasmas in galactic environments unfolds, driven by dynamo processes fueled by fluid motions like turbulence and differential rotation.</p>
-
-            <p>Observationally, the arsenal of techniques in galactic magnetohydrodynamics includes polarimetry and synchrotron emission, critical tools for scrutinizing the distribution, structure, and strength of magnetic fields spanning diverse regions within galaxies. The invaluable insights derived from these observations contribute substantially to our understanding of pivotal astrophysical processes, from the genesis of stars to the initiation of galactic winds. Despite the intricate dance of magnetized plasmas introducing challenges, the field perseveres with ongoing advancements in observational methodologies and numerical simulations. These endeavors progressively deepen our insights, casting an illuminating beam on the evolutionary odyssey of galaxies throughout the vast cosmos.</p>
+        <div class="equation">
+            \[ u_{n+1} = u_n + \Delta t \cdot f(u_n, t_n) \]
         </div>
 
-        <div class="image-wrapper">
-            <img src="galactic_magnetic.jpg" alt="Description of Image 1" style="width: 100%; height: 350px;">
-        </div>
-    </div>
-
-</section>	
-<section id="galactic-magnetic-fields" class="mnras">
-
-    <h2>Galactic Magnetic Fields</h2>
-
-    <p>Galactic magnetic fields are intricate and omnipresent phenomena that wield profound influence over the structural, dynamic, and evolutionary aspects of galaxies. Beyond merely shaping the cosmic landscape, these magnetic fields play a pivotal role in orchestrating a myriad of astrophysical processes, ranging from the intricate dance of star formation to the intricate ballet of cosmic ray propagation. The intricate interplay between these magnetic fields and the cosmic environment is crucial for unraveling the intricate tapestry of the broader astrophysical context.</p>
- <p>
-On a grand scale, large-scale magnetic fields extend their dominion over vast cosmic territories, traversing thousands of light-years within galaxies. These expansive fields reveal a remarkable tapestry of coherence and organization, weaving intricate patterns that extend their influence over the behavior of charged particles populating the interstellar medium. Understanding the nuances of these large-scale structures entails delving into the intricate mechanisms governing magnetic field generation, meticulous maintenance, and the consequential impact on the dynamic ballet of galactic processes. As we delve deeper into the study of galactic magnetic fields, we embark on a journey to unravel the mysteries that govern the cosmic choreography within the vast and mesmerizing realms of the universe.</p>
-
-   
-</section>
-<section id="galactic-dynamo-theory" class="mnras">
-    <h2>Galactic Dynamo Theory</h2>
-
-    <p>Galactic dynamo theory serves as a cornerstone in explaining the amplification and maintenance of galactic magnetic fields. Dynamo processes involve the conversion of kinetic energy from fluid motions within a galaxy into magnetic energy. The theoretical foundation of dynamo theory is rooted in the magnetohydrodynamic (MHD) equations, which describe the behavior of electrically conducting fluids, such as the ionized gas present in the interstellar medium.</p>
-
-    <p>Mathematically, the evolution of the magnetic field (\( \mathbf{B} \)) in a galactic environment can be expressed through the induction equation:</p>
-
-    \[
-    \frac{\partial \mathbf{B}}{\partial t} = \nabla \times (\mathbf{v} \times \mathbf{B} - \eta \nabla \times \mathbf{B})
-    \]
-<ol>
-  <li>When \( \eta \) is much larger than 1 (\( \eta \gg 1 \)):
-    \[ \frac{\partial \mathbf{B}}{\partial t} \approx -\eta \nabla^{2}\mathbf{B} \]
-    In this scenario, the evolution of the magnetic field (\( \mathbf{B} \)) is predominantly governed by magnetic diffusion. Large \( \eta \) values lead to rapid dissipation of magnetic field structures, resulting in a diffusion-dominated regime.
-  </li>
-
-  <li>When \( \eta \) is much smaller than 1 (\( \eta \ll 1 \)):
-    \[ \frac{\partial \mathbf{B}}{\partial t} \approx \nabla \times (\mathbf{v} \times \mathbf{B}) \]
-    In this regime, the induction equation is primarily influenced by the advective and rotational terms (\( \mathbf{v} \times \mathbf{B} \)), with magnetic diffusion playing a minor role. Smaller \( \eta \) values allow magnetic field structures to evolve more freely.
-  </li>
-</ol>
-
-    <p>To provide a concrete example, let us consider the mean-field dynamo theory, which describes the evolution of the mean magnetic field \(\overline{B}\)) and the small-scale magnetic fluctuations (\( \mathbf{b} \)). The governing equations are given by:</p>
-<p>
-\[
-\frac{\partial \overline{B}}{\partial t} = \nabla \times (\overline{\mathbf{v}} \times \overline{B} + \boldsymbol{\mathcal{E}} - \eta( \nabla \times \overline{B}))
-\]
- </p>
-
-  <p>where \(\boldsymbol{\mathcal{E}} \approx \overline{{v} \times \mathbf{b}}\).</p>  
-<p>
-The mean field induction equation lies at the heart of galactic magnetohydrodynamics, describing the evolution of the mean magnetic field with a nuanced interplay of forces. The term \( \frac{\partial \overline{\mathbf{B}}}{\partial t} \) delineates the temporal changes in the mean magnetic field, shaped by intricate interactions. The component \( \nabla \times (\overline{\mathbf{v}} \times \overline{\mathbf{B}}) \) embodies the induction driven by fluid motions, contributing to the amplification of the mean magnetic field. Additionally, the electromotive force \( \mathbf{E} \) introduces complexity, arising from turbulent motions within the galactic medium.
-</p>
-
-<p>
-However, the term \( - \eta \nabla \times \overline{\mathbf{B}} \) introduces magnetic diffusion, where \( \eta \) represents the magnetic diffusivity. In scenarios with a significantly large \( \eta \), magnetic diffusion dominates, resulting in a damping effect on variations in the mean magnetic field. Conversely, when \( \eta \) is small, the influence of magnetic diffusion diminishes, allowing fluid motions and turbulent processes to exert a more pronounced role in shaping the evolution of the mean magnetic field. This delicate balance between induction, electromotive forces, and magnetic diffusion intricately governs the behavior of galactic magnetic fields, revealing the captivating dynamics within the vast cosmic landscape.
-</p>
-
-
-  <p>Example of the mean field dynamo behaviour</p>
-
-	<figure>
-        
-        <img src="example.png" alt="Description of Image 1" >
-        <figcaption >
-Fluid elements acquire a spin as they rise or fall due to the Coriolis force,leading to a preferential sign of the mean kinetic helicity density in each hemisphere.This explains the mean kinetic helicity density of the turbulent motions is non-zero in each hemisphere.</figcaption>
-    </figure>
-</section>
-<section id="Methods" class="mnras">
-    <h2>Methods</h2>
-    <p>These are some numerical methods to solve any differential equation</p>
-    <h3><u>Time-Stepping Routine: Explicit Euler Method</u></h3>
-
-    <p>
-        In numerical simulations, the explicit Euler method is a simple time-stepping algorithm. It updates the solution at each time step using the formula:
-    </p>
-
-    <div class="equation">
-        \[ u_{n+1} = u_n + \Delta t \cdot f(u_n, t_n) \]
-    </div>
-
-    <p>
-        Here:
+        <p>
+            Here:
         <ul>
             <li>\( u_{n+1} \) is the solution at the next time step.</li>
             <li>\( u_n \) is the solution at the current time step.</li>
             <li>\( \Delta t \) is the time step size.</li>
             <li>\( f(u_n, t_n) \) represents the derivative of \( u \) with respect to time at \( t_n \).</li>
         </ul>
-    </p>
-    <h3><u>Finite Differencing Routine: Central Difference Scheme</u></h3>
+        </p>
+        <h3><u>Finite Differencing Routine: Central Difference Scheme</u></h3>
 
-    <p>
-        In numerical simulations, the central difference scheme is a finite differencing method used to approximate second-order spatial derivatives. For a function \( u \) with respect to space (\( x \)), the central difference formula for the second derivative is given by:
-    </p>
+        <p>
+            In numerical simulations, the central difference scheme is a finite differencing method used to approximate
+            second-order spatial derivatives. For a function \( u \) with respect to space (\( x \)), the central
+            difference formula for the second derivative is given by:
+        </p>
 
-    <div class="equation">
-        \[ \frac{\partial^2 u}{\partial x^2} \approx \frac{u_{i+1} - 2u_i + u_{i-1}}{\Delta x^2} \]
-    </div>
+        <div class="equation">
+            \[ \frac{\partial^2 u}{\partial x^2} \approx \frac{u_{i+1} - 2u_i + u_{i-1}}{\Delta x^2} \]
+        </div>
 
-    <p>
-        Here:
+        <p>
+            Here:
         <ul>
             <li>\( u_{i+1} \) is the value at the grid point to the right.</li>
             <li>\( u_i \) is the value at the current grid point.</li>
             <li>\( u_{i-1} \) is the value at the grid point to the left.</li>
             <li>\( \Delta x \) represents the spatial grid spacing.</li>
         </ul>
-    </p>
-    <h3><u>Runge-Kutta Method</u></h3>
+        </p>
+        <h3><u>Runge-Kutta Method</u></h3>
 
-    
+
 
         <p>
-            The Runge-Kutta method is a widely used numerical technique for solving ordinary differential equations (ODEs). It provides a more accurate solution compared to simpler methods like Euler's method. The fourth-order Runge-Kutta method, denoted as RK4, is particularly popular due to its balance between accuracy and computational efficiency.
+            The Runge-Kutta method is a widely used numerical technique for solving ordinary differential equations
+            (ODEs). It provides a more accurate solution compared to simpler methods like Euler's method. The
+            fourth-order Runge-Kutta method, denoted as RK4, is particularly popular due to its balance between accuracy
+            and computational efficiency.
         </p>
 
         <p>
@@ -205,97 +210,140 @@ Fluid elements acquire a spin as they rise or fall due to the Coriolis force,lea
         </div>
 
         <p>
-            Here, \(x_n\) and \(y_n\) are the current values of the independent and dependent variables, respectively. \(h\) is the step size, and \(f(x, y)\) is the given function defining the ODE. The RK4 method offers a good compromise between accuracy and computational efficiency, making it suitable for a wide range of applications.
+            Here, \(x_n\) and \(y_n\) are the current values of the independent and dependent variables, respectively.
+            \(h\) is the step size, and \(f(x, y)\) is the given function defining the ODE. The RK4 method offers a good
+            compromise between accuracy and computational efficiency, making it suitable for a wide range of
+            applications.
         </p>
 
         <p>
-            The method is particularly valuable in physics, engineering, and other fields where differential equations model dynamic systems. Its efficiency comes from the iterative nature of the calculations, allowing for the approximation of complex solutions. Researchers and engineers often use RK4 when analytical solutions are difficult or impossible to obtain.
+            The method is particularly valuable in physics, engineering, and other fields where differential equations
+            model dynamic systems. Its efficiency comes from the iterative nature of the calculations, allowing for the
+            approximation of complex solutions. Researchers and engineers often use RK4 when analytical solutions are
+            difficult or impossible to obtain.
         </p>
 
         <p>
-            In conclusion, the Runge-Kutta method, especially RK4, is a powerful numerical tool for solving ordinary differential equations. Its accuracy and efficiency make it a staple in the computational toolbox of scientists and engineers, contributing to advancements in various scientific disciplines.
+            In conclusion, the Runge-Kutta method, especially RK4, is a powerful numerical tool for solving ordinary
+            differential equations. Its accuracy and efficiency make it a staple in the computational toolbox of
+            scientists and engineers, contributing to advancements in various scientific disciplines.
         </p>
 
-    
-    <h3><u>Some other numerical methods</u></h3>
-    <h4>1. Adams-Moulton Method (Predictor-Corrector)</h4>
-<p>
-    <strong>Description:</strong> Adams-Moulton is an implicit predictor-corrector method. It predicts the next value using the Adams-Bashforth method (explicit), then corrects it using implicit methods. It strikes a balance between stability and accuracy.
-</p>
-<p>
-    <strong>Use:</strong> Suitable for stiff ODEs and situations where implicit methods are preferred for stability.
-</p>
 
-<h4>2. Fourth-Order Runge-Kutta (RK4)</h4>
-<p>
-    <strong>Description:</strong> RK4 is a widely used explicit method. It involves four evaluations per step, calculating a weighted average of slopes to approximate the next value. RK4 is known for its simplicity and good accuracy.
-</p>
-<p>
-    <strong>Use:</strong> A general-purpose method suitable for a wide range of ODEs, offering a good compromise between accuracy and computational cost.
-</p>
+        <h3><u>Some other numerical methods</u></h3>
+        <h4>1. Adams-Moulton Method (Predictor-Corrector)</h4>
+        <p>
+            <strong>Description:</strong> Adams-Moulton is an implicit predictor-corrector method. It predicts the next
+            value using the Adams-Bashforth method (explicit), then corrects it using implicit methods. It strikes a
+            balance between stability and accuracy.
+        </p>
+        <p>
+            <strong>Use:</strong> Suitable for stiff ODEs and situations where implicit methods are preferred for
+            stability.
+        </p>
 
-<h4>3. Adams-Bashforth Methods</h4>
-<p>
-    <strong>Description:</strong> Adams-Bashforth methods are explicit multi-step techniques. They predict the next value using a weighted sum of previous function values and their derivatives. Higher-order methods provide increased accuracy.
-</p>
-<p>
-    <strong>Use:</strong> Effective for non-stiff ODEs when historical data is available for prediction.
-</p>
+        <h4>2. Fourth-Order Runge-Kutta (RK4)</h4>
+        <p>
+            <strong>Description:</strong> RK4 is a widely used explicit method. It involves four evaluations per step,
+            calculating a weighted average of slopes to approximate the next value. RK4 is known for its simplicity and
+            good accuracy.
+        </p>
+        <p>
+            <strong>Use:</strong> A general-purpose method suitable for a wide range of ODEs, offering a good compromise
+            between accuracy and computational cost.
+        </p>
 
-<h4>4. Implicit Methods (e.g., Backward Euler)</h4>
-<p>
-    <strong>Description:</strong> Implicit methods involve solving equations at each step, making them more stable for stiff ODEs. Backward Euler is an implicit method where the derivative at the endpoint of the step is used for prediction.
-</p>
-<p>
-    <strong>Use:</strong> Preferred for stiff ODEs where stability is crucial, and implicit solutions are necessary.
-</p>
-<li><a href="Numerical_Recipes.pdf" target="_blank">Note: To get more information about solving ODES and PDEs you can refer to this PDF</a></li>
+        <h4>3. Adams-Bashforth Methods</h4>
+        <p>
+            <strong>Description:</strong> Adams-Bashforth methods are explicit multi-step techniques. They predict the
+            next value using a weighted sum of previous function values and their derivatives. Higher-order methods
+            provide increased accuracy.
+        </p>
+        <p>
+            <strong>Use:</strong> Effective for non-stiff ODEs when historical data is available for prediction.
+        </p>
 
-           
+        <h4>4. Implicit Methods (e.g., Backward Euler)</h4>
+        <p>
+            <strong>Description:</strong> Implicit methods involve solving equations at each step, making them more
+            stable for stiff ODEs. Backward Euler is an implicit method where the derivative at the endpoint of the step
+            is used for prediction.
+        </p>
+        <p>
+            <strong>Use:</strong> Preferred for stiff ODEs where stability is crucial, and implicit solutions are
+            necessary.
+        </p>
+        <li><a href="Numerical_Recipes.pdf" target="_blank">Note: To get more information about solving ODES and PDEs
+                you can refer to this PDF</a></li>
+            </div>
         </section>
 
-<section id="Results" class="mnras">
-<h2>Results</h2>
-    <p>These are some of the results of solving the diffusion equation.</p>
 
-    <!-- Create a division for the Results section -->
-    <div class="results-content">
 
-        <h3><u>Solving the diffusion equation in r (under the no-z approximation)</u></h3>
-        <img src="magneticfield_plot.png" alt="image1">
 
-        <h3><u>Exploring the evolution of the spatial solution for Br and Bφ, and of the pitch angle of the mean magnetic field p.</u></h3>
-        <img src="magnetic_field_evolution.gif" alt="image2">
-        
-	<img src="pitch_angle_evolution.gif" alt="image3">
 
-        <h3><u>Exploring how different boundary conditions affect the magnetic field with r.</u></h3>
-        <img src="magnetic_boundary.gif" alt="image4"> 
-	
-	<h3><u>Explore how different seed fields affect the magnetic field plort with r.</u></h3> 
-        <img src="evolution_seed.gif" alt="image5">
+        <section class="container my-5 text-light" id="Results">
+            <h2 class="text-center mb-5 mnras">Results</h2>
+            <div class="row align-items-center">
+                <p>These are some of the results of solving the diffusion equation.</p>
 
-        <li><a href="https://github.com/Ritabik/Galactic_Dynamo" target="_blank" rel="noopener noreferrer">To view the codes please check my git-hub repository</a></li>
-        
+        <!-- Create a division for the Results section -->
+        <div class="results-content">
+
+            <h3><u>Solving the diffusion equation in r (under the no-z approximation)</u></h3>
+            <img src="magneticfield_plot.png" alt="image1">
+
+            <p><u>Exploring the evolution of the spatial solution for Br and Bφ, and of the pitch angle of the mean
+                    magnetic field p.</u></p>
+            <img src="magnetic_field_evolution.gif" alt="image2">
+
+            <img src="pitch_angle_evolution.gif" alt="image3">
+
+            <h3><u>Exploring how different boundary conditions affect the magnetic field with r.</u></h3>
+            <img src="magnetic_boundary.gif" alt="image4">
+
+            <h3><u>Explore how different seed fields affect the magnetic field plort with r.</u></h3>
+            <img src="evolution_seed.gif" alt="image5">
+
+            
+
+        </div>
+        <br>
+        <li><a href="https://github.com/Ritabik/Galactic_Dynamo" target="_blank" rel="noopener noreferrer">To view
+            the codes please check my git-hub repository</a></li>
+        <li>
+            <a href="" _blank" rel="noopener noreferrer">Here is the report of Task 1 given, click here to Download the
+                PDF</a></li>
+            </div>
+        </section>
+
+
+        <section class="container my-5 text-light" id="Conclusions">
+            <h2 class="text-center mb-5 mnras">Conclusions</h2>
+            <div>
+		<p>...................Final work is still remaining, it will be completed at the time of final submission.......................</p>
+            </div>
+        </section>
+
+
+        <section class="container my-5 text-light" id="References">
+            <h2 class="text-center mb-5 mnras">References</h2>
+            <div class="row align-items-center">
+               
+            </div>
+        </section>
+
+
+
+
+
     </div>
-<br>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
 
-<li><a href=""_blank" rel="noopener noreferrer">Here is the report of Task 1 given, click here to Download the PDF</a></li>
-    </section>
-
-<section id="Conclusions" class="mnras">
-<h2>Conclusions</h2>
-     <p>...................Final work is still remaining, it will be completed at the time of final submission.......................</p>
-    </section>
-
-<section id="References" class="mnras">
-<h2>References</h2>
-        <!-- ... (Your existing Mean Field Dynamo Example content) ... -->
-    </section>
-
-<button id="scrollToTopBtn">Scroll to Top</button>
-
-
-
+    <script async src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </body>
+
 </html>
